@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(158, 156, 156);
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.apply_box {
+    max-width: 600px;
+    padding: 20px;
+    background-color: aliceblue;
+    /* margin 0 ka matlab box per koyi farak nhi padega lekin 20px vah right side ki or khasak jayega*/
+    margin: 0 auto;
+    margin-top: 20px;
+    box-shadow: 4px 3px 5px rgba(44, 37, 37, 0.2);
+    border-radius: 20px;
+}
+
+.title_small {
+    font-size: 18px;
+}
+
+.form_container {
+    margin-top: 20px;
+    display: grid;
+    /*minmax 200px of the column to hona hi chahiye. if place na bacha ho to 1fr ka use karte hai*/
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.form_control {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+input,
+select,
+textarea {
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+input:focus {
+    outline-color: red;
+}
+
+.button_container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+button {
+    background-color: red;
+    border: transparent solid 2px;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 8px;
+    transition: 0.3s ease-in;
+}
+
+button:hover {
+    background-color: #ccc;
+    border: 2px solid red;
+    color: black;
+    transition: 0.3s ease-out;
+    cursor: pointer;
+}
+
+.textarea_control {
+    grid-column: 1 / span 2;
+}
+
+.textarea_control textarea {
+    width: 100%;
+}
+
+@media (max-width: 460px) {
+    .textarea_control {
+        grid-column: 1 / span 1;
+    }
+}
+
+;

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>job Application(Web)</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="apply_box">
+            <div class="content">
+                <h1>Job Application
+                    <span class="title_small">(Web)</span>
+                </h1>
+                <form action="">
+                    <div class="form_container">
+                        <div class="form_control">
+                            <!-- for ka use first name per click karne par hi vo empty place per apne aap chala jata hai-->
+                            <label for="first_name"> First Name</label>
+                            <input id="first_name"  placeholder="Enter first name..." />
+                        </div>
+                        <div class="form_control">
+                            <label for="last_name"> Last Name</label>
+                            <input id="last_name" name="last_name" placeholder="Enter last name..." />
+                        </div>
+                        <div class="form_control">
+                            <label for="Email"> Email</label>
+                            <input type="email"id="Email" name="Email" placeholder="Enter Email..." />
+                        </div>
+                        <div class="form_control">
+                            <label for="Job_Role"> Job Role</label>
+                            <select id="Job_Role" name="Job_Role">
+                                <option value="">Select Job Role</option>
+                                <option value="Frontend"> Frontend Developer</option>
+                                <option value="Backend"> Backend Developer</option>
+                                <option value="Full_stack">Full Stack Developer</option>
+                                <option value="ui_ux">UI UX Designer</option>
+                            </select>
+                        </div>
+                        <div class="textarea_control">
+                            <div class="form_control">
+                                <label for="Address"> Address</label>
+                                <textarea
+                                id="address"
+                                name="address"
+                                row="4"
+                                cols="50"
+                                placeholder="Enter Address"></textarea>
+                            </div>
+                            <div class="form_control">
+                                <label for="city"> City</label>
+                                <input id="city" name="city" placeholder="Enter City name..." />
+                            </div>
+                            <div class="form_control">
+                                <label for="pincode"> Pincode</label>
+                                <input type="number" id="pincode" name="pincode" placeholder="Enter Pincpde..." />
+                            </div>
+                            <div class="form_control">
+                                <label for="date"> Start Date</label>
+                                <input  value="2022-01-10" type="date" id="date" name="date" />
+                            </div>
+                            <div class="form_control">
+                                <label for="upload"> Upload Your CV</label>
+                                <input  type="file" id="upload" name="upload" />
+                            </div>
+                    </div>
+                     <div class="button_container">
+                        <button type="submit" >Apply Now</button>
+                     </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
